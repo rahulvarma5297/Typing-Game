@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="cont">
+        <header class="header">
+            <div class="logo">
+                <a href="#">Rahul<span>Varma</span></a>
+            </div>
+        </header>
+        <div class="_sGame">
+            <div class="start-content">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h1 class="advice">Please be prepared. Good luck!</h1>
+                <button class="btn start-game">start typing now</button>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <input class="input-field" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" autofocus aria-hidden="true" style="outline: none; color: white; border: white; position: fixed; font-size: 1px; left: 50%; top: -21px;opacity: 0;">
+            <div class="content-box">
+                <div class="typing-text">
+                    <div class="progress"></div>
+                    <div class="box">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <ul class="result-details">
+                        <li class="time">
+                            <p>Time Left</p>
+                            <span><b>60</b>s</span>
+                        </li>
+                        <li class="mistake">
+                            <p>Mistakes</p>
+                            <span>0</span>
+                        </li>
+                        <li class="accuracy">
+                            <p>Accuracy</p>
+                            <span><b>0</b>%</span>
+                        </li>
+                        <li class="wpm">
+                            <p>Speed</p>
+                            <span>0 <small>WPM</small></span>
+                        </li>
+                        <li class="cpm">
+                            <p>CPM</p>
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <button class="btn">Restart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="spinner">
+            <div></div>
+        </div>
+
+        <div class="spelling-results-panel">
+            <div class="prog-stats">
+
+                <div class="prog-accuracy">
+                    <div class="circular-progress">
+                        <span class="progress-value">0%</span>
+                    </div>
+                    <span class="text">Accuracy</span>
+                </div>
+
+                <div class="prog-cpm">
+                    <div class="circular-progress">
+                        <span class="progress-value">0 <small>Letter/Min</small></span>
+                        <span class="letter-min"></span>
+                    </div>
+                    <span class="text">CPM</span>
+                </div>
+
+                <div class="prog-wpm">
+                    <div class="circular-progress">
+                        <span class="progress-value">0 <small>WPM</small></span>
+                    </div>
+                    <span class="text">Speed</span>
+                </div>
+
+            </div>
+
+            <div class="resultat-explication">
+                <div class="explication-precision explication">
+                    <div class="media">
+                        <img src="./imgs/accuracy.png" alt="">
+                    </div>
+                    <div class="contenu acc">
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="explication-speed explication">
+                    <div class="media">
+                        <img src="./imgs/performance.png" alt="">
+                    </div>
+                    <div class="contenu sp">
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control">
+                <button class="btn restart">Try Again</button>
+            </div>
+
+        </div>
+
+        <audio id="error" src="./sounds/error.mp3" preload="auto"></audio>
+        <audio id="congratulations" src="./sounds/congratulations.mp3" preload="auto"></audio>
+
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
